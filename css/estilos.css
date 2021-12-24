@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,800;1,400&display=swap');
+/*Reglas de uso para fuente font-family: 'Raleway', sans-serif */
+
+:root {
+	--text-color: rgb(0, 0, 0);
+	--text-hover-color: rgb(0, 0, 0, 0.5);
+	--text-sobrefondooscuro-color: rgb(255, 255, 255);
+	--fondo-oscuro: rgb(0,0,0);
+	--contrase-color: rgb(198, 55, 0);
+	--fondo-contenidos-pricipales: rgb(244, 244, 244);
+	--fondo-formulario-boletín: rgb(242, 232, 228);
+  }
+
+.contenedor {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+	.contenedor {
+		margin: 0 auto;
+		max-width: 60%;
+	}
+}
+
+a {
+	  text-decoration: none;
+	  color: var(--contrase-color);
+  }
+
+a:hover {
+	  color: var(--text-hover-color);
+ }
+
+header a {
+	color: var(--text-color);
+}
+
+header a:hover {
+	color: var(--text-hover-color);
+}
+
+.art_titulo a {
+	font-size: 1.1rem;
+	font-weight: 800;
+}
+
+.art_leermas a {
+	font-weight: 800;
+	border-bottom: dotted 2px;
+	border-bottom-color: var(--contrase-color);
+}
+
+.art_leermas a:hover {
+	border-bottom: none;
+}
+
+li.activo a {
+	color: var(--contrase-color);
+}
+
+body {
+	margin: 0px;
+	font-family: 'Raleway', sans-serif;
+	color: var(--text-color);
+	background-color: var(--fondo-contenidos-pricipales);
+}
+
+header {
+	margin:0px;
+	padding-top:10px;
+	padding-bottom: 0px;
+	text-align: center;
+	background-color: white;
+}
+
+header.fijo {
+	position: sticky;
+	top: 0px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+	header {
+		text-align: initial;
+	}
+}
+
+.logo p:first-child {
+	font-size: 0.6rem;
+	margin-bottom: 0px;
+}
+
+.logo p:nth-child(2) {
+	font-size: 2.4rem;
+	font-weight: 800;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	margin-bottom: 0px;
+}
+
+nav ul{
+	padding:0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 5px;
+}
+
+nav li{
+	list-style-type: none;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+@media (min-width: 768px) {
+	nav li {
+		display: inline-block;
+		margin-right: 20px;
+	}
+}
+
+
+
+section.lema {
+	font-size: 1.7rem;
+	line-height: 2.5rem;
+	margin-top: 0px;
+	padding-top: 2rem;
+	padding-bottom: 1.5rem;
+	background-color: transparent;
+	background-image: url("../images/bg-hero-home.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: var(--text-sobrefondooscuro-color);
+	
+}
+
+
+
+
+main {
+	padding-top: 10px;;
+	font-size: 1rem;
+	line-height: 1.3rem;
+}
+
+h1 {
+	text-align: center;
+	font-size: 1.3rem;
+	margin-bottom: 25px;
+}
+
+h2 {
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+
+.art_imagen {
+	width: 100%;
+
+}
+
+.art_fecha {
+	font-weight: 600;
+	margin-top:6px;
+	margin-bottom: 0px;
+}
+
+p.fin_seccion {
+	margin-bottom: 60px;	
+}
+
+@media (min-width: 768px) {
+	section.articulos {
+		display: flex;
+	}
+
+	section.articulos article {
+		flex: 1;
+	}
+
+	section.articulos article:nth-child(2) {
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+
+}
+
+section.articulos {
+	margin-bottom:60px;
+}
+
+
+section.formulario {
+	padding: 30px 30px;
+	background-color: var(--fondo-formulario-boletín);
+}
+
+
+
+
+form.formulario1 {
+	max-width: 500px;
+	margin: 0 auto;
+
+}
+
+form.formulario1 input[type="text"],form.formulario1 input[type="email"] {
+	width:90%;
+	height: 35px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+
+.texto_formulario_politicas{
+	font-size: 0.6rem;
+	line-height: 1rem;
+}
+
+
+input[type="submit"] {
+	padding: 10px 30px;
+	color: var(--text-sobrefondooscuro-color);
+	background-color: var(--contrase-color);
+	border-style: none;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: rgb(0, 0, 0);
+}
+
+span.email {
+	color: var(--contrase-color);
+}
+
+footer {
+	font-size: 1rem;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom:20px;
+	background-color: var(--fondo-oscuro);
+	color: var(--text-sobrefondooscuro-color);
+}
+
+
+footer a {
+	color: var(--text-sobrefondooscuro-color);
+}
+
+footer ul.informacion a:hover {
+	color: var(--contrase-color);
+}
+
+footer ul.redes_sociales a:hover {
+	opacity: 0.7;
+}
+
+footer ul.informacion li{
+	list-style-type: none;
+}
+
+
+footer ul.redes_sociales li{
+	display: inline-block;
+	list-style-type: none;
+}
+
+footer ul{
+	padding-left: 0px;
+}
+
+@media (min-width: 768px) {
+	footer {
+		text-align: left;
+	}
+
+	footer ul.informacion li{
+		display: inline-block;
+		list-style-type: circle;
+		margin-right: 10px;
+	}
+
+	footer ul.informacion li::before{
+		content: "\2022";
+		color: white;
+		margin-right: 5px;
+	}
+
+	footer ul.informacion li:first-child:before{
+		content: none;
+
+	}
+
+
+	footer ul.redes_sociales li{
+		padding-left: 0px;
+	}
+
+	
+}
+
+
+
+article.art_sintomas_par, article.art_sintomas_impar {
+	margin-bottom:15px;
+}
+
+
+div.art_bloque_imagen {
+	background-color: white;
+	padding: 10px;
+	margin-bottom: 20px;
+	margin-bottom: 0px;
+}
+
+div.art_bloque_contenido {
+	background-color: white;
+	padding: 10px;
+	margin-bottom: 0px;
+}
+
+
+
+.art_sintomas_titulo {
+	margin-top:0px;
+	margin-bottom: 0px;
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+
+
+
+
+@media (min-width: 768px) {
+
+	article.art_sintomas_par, article.art_sintomas_impar {
+		margin-bottom:40px;
+	}
+	
+
+	article.art_sintomas_impar, article.art_sintomas_par{
+		display: grid;	
+		grid-template-columns: repeat(3,1fr);
+	}
+
+	article.art_sintomas_impar div.art_bloque_imagen{
+		grid-column: 1 ;
+		grid-row: 1;
+	}
+	article.art_sintomas_impar div.art_bloque_contenido{
+		grid-column: 2 ;
+		grid-row: 1;
+	}
+
+	article.art_sintomas_par div.art_bloque_imagen{
+		grid-column: 2 ;
+		grid-row: 1;
+	}
+	article.art_sintomas_par div.art_bloque_contenido{
+		grid-column: 3 ;
+		grid-row: 1;
+	}
+
+}
+
+
+article.art_video{
+	background-color: white;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 5px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.contenedor_video {
+	position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.contenedor_video iframe{
+	position: absolute;
+	top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media (min-width: 768px) {
+
+	section.videos {
+		display: grid;	
+		grid-template-columns: repeat(2,1fr);
+		grid-auto-rows: minmax(100px, auto);
+		grid-gap:20px;
+	}
+
+}
+
+
+
+
+
+section.conferencia {
+	padding :15px;
+}
+
+
+div.contenedor_300{
+	max-width: 300px;
+}
+
+div.contenedor_300 img {
+	width: 100%;
+}
+
+
+
+dt {
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+dd {
+	margin-left: 0px;
+	margin-bottom: 10px;
+}
+
+ol {
+	padding-left: 30px;
+}
+
+div.cita {
+	background-color: white;
+	font-style: italic;
+	border-left: solid 5px;
+	border-left-color: var(--contrase-color);
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+div.cita p:last-child{
+	font-weight: 800;
+}
+
+div.conferencia_bloque_izquierda {
+	margin-bottom: 40px;
+}
+
+
+@media (min-width: 768px) {
+
+	section.conferencia {
+		display: grid;	
+		grid-template-columns: repeat(2,1fr);
+		grid-gap:60px;
+	}
+
+}
